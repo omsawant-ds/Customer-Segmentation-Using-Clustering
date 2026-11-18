@@ -1,0 +1,6 @@
+model,n_clusters,noise,silhouette,davies_bouldin,calinski_harabasz,stability_ari
+K-Means,5,0.0,0.2179,1.6639,2304.376,0.9818
+MiniBatch K-Means,5,0.0,0.1962,1.7619,2023.9173,0.4498
+Agglomerative (Ward),5,0.0,0.1987,1.6678,1982.6727,0.5951
+Gaussian Mixture,5,0.0,0.175,1.8947,1924.4817,0.7224
+"DBSCAN (eps=1.6, min_samples=10)",6,0.1942,0.2036,0.8563,768.742,
