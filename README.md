@@ -59,7 +59,7 @@ Marketing and risk teams need to know *who* their customers are, not just that c
 ```bash
 git clone https://github.com/omsawant-ds/Customer-Segmentation-Using-Clustering.git
 cd Customer-Segmentation-Using-Clustering
-pip install -r requirements.txt
+pip install -r requirements-dev.txt   # or requirements.txt for just the app and pipeline
 
 # regenerate every table and figure in reports/
 PYTHONPATH=src python -m segmentation.pipeline        # PowerShell: $env:PYTHONPATH="src"; python -m segmentation.pipeline
