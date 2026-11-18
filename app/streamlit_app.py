@@ -38,11 +38,11 @@ with overview:
     c1.plotly_chart(px.bar(prof.sort_values("customers"), x="customers", y="persona", orientation="h",
                            color="persona", color_discrete_map=colour, text="share_%",
                            title="Segment sizes").update_layout(showlegend=False, yaxis_title=""),
-                    width="stretch")
+                    use_container_width=True)
     proj = model.projection().sample(4000, random_state=0)
     c2.plotly_chart(px.scatter(proj, x="PC1", y="PC2", color="persona", color_discrete_map=colour, opacity=0.6,
                                title="Customers in PCA space").update_traces(marker_size=5),
-                    width="stretch")
+                    use_container_width=True)
     st.subheader("Segment profiles (medians)")
     st.dataframe(prof, width="stretch", hide_index=True)
     st.subheader("What each segment means")
